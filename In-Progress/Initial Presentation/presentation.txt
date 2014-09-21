@@ -1,0 +1,46 @@
+==================
+Presentation Flow
+==================
+1) cover
+
+2) use case (intro) - major details of project, listing functionality
+
+3)login - uname/pword, message if fail, close window if pass
+&
+options(main) menu - displays functionality based on user role, has logout button
+
+4)add/edit users - dropdown with employees, edit button and add new button go to same screen, but edit populates based on currently stored information.  save
+fields:  fname, lname, uname, pword
+error checking: unique usernames, (password contraint?), all fields filled
+(there is one built-in admin account, the schedule manager who is not scheduled and only manages the system)
+
+5)set business hours - choose days of the week, start/stop hours, number of employees, then hit save, has a system default for first load
+error checking: fields filled (# employees filled for all working days), hours > 0
+overnight shift could happen! Darcie knows
+
+6)alter availability (empl) - similar to set hours, checks for errors, save sends to DB, start/stop are limited based on the set business hours, defaults to last saved availability, unless that conflicts with a new version of business hours, then system default
+error checking:  fields filled, hours > 0
+
+7)gen schedule (fail) - manager goes in, chooses option for how schedule is generated,hits generate button, gets printout (some talk of how the algorithm works: seniority, hours worked last schedule- asc or desc)
+but, if the hours don't work out, then gets an error message with holes in schedule and num hours worked per empl (maybe more info?)
+
+expectation that manager manually communicates with employees to resolve schedule conflicts
+
+6)alter availability (mngr) - then they mngr goes back to main menu, and goes to alter availability, with a difference from employee, they have a middle screen where they have to select a particular employee to load in and change.  The manager doesn't have preferences (they either have a separate employee account or just have set hours)
+
+7)gen schedule (pass) - once it works, the mngr gets a printout of the full schedule and num hours per empl (mockup of that)
+&
+display schedule - displays error message if no schedule in the system
+
+conclusion - review (address possible improvements)
+
+
+overall notes:  -make sure we mention which actor (user role) is using each function, 
+-talk about different main menus for each, 
+-how the screens are dynamically generated based on loaded information (or defaults), 
+-entry/exit conditions (sort of), 
+-flow of the system overall (back buttons returning to main menu, logout returns to login), 
+-saving and error-checking being related activities (and what those errors might be),
+-how does the system work from week to week? (easier if we say there is just one schedule, not keeping a history)
+(what about an add/remove week, and a middle menu like picking an employee for manager, where you pick from available weeks)
+-address where things can be expanded and improved upon

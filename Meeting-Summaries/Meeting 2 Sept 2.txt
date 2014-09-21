@@ -1,0 +1,16 @@
+Meeting on Tuesday, Sept 2
+===========================
+Darcie - Screen Mockups for alter prefs, set hours, generate schedule
+
+Jeremy - describe/narrate for alter pref and set hours
+
+Chad - use case, login/logout description, screen mockup for login and options menu, describe generate schedule
+
+
+generate schedule - hit generate, if possible show schedule, else show errors and options to send to alter prefs
+
+set business hours - checkboxes next to days of the week, drop-down boxes for start/stop times, save button that error checks and displays messages, close to go back to optinos menu
+
+alter prefs - similar to set hours, but limited based on set business hours
+
+additional, display schedule, add/remove user

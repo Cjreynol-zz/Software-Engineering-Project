@@ -1,0 +1,34 @@
+SE-todo:
+-update the use case diagram to make sure all descriptors are one word
+
+-review wording for entire document, especially use case descriptions
+
+-check to see if mockups need to be included as a chapter 3 for this deliverable.  If so, I still have the .png files (just need a new one once we update the use case diagram)
+	-definitely do need the mock-ups, saw it in the RAD_structureV1.docx file.  The formatting is REALLY specific, so make sure we double check everything multiple times.
+
+-should we be able to view the schedule in generate schedule?  Why not just have it say success, then you go to display schedule to see it?  Cuts out some overlap, and that shrinks down the generate schedule interface.  Later if we decide to format how the schedule is displayed differently we don't have to bother with that in two places.
+	-changed the description to reflect this idea, we can look at it and see what we like tonight
+
+
+compiling change notes:
+-minor wording changes here and there for clarity.  All actors and use cases have to be single words, no longer capitalizing main menu and button names, all buttons are clicked, drop down menus are for choosing and they are selected from, etc.  Added descriptions of forms to the system responses.
+
+-added the words screen and button literally everywhere, Darcie started this trend and I intend to take it to its conclusion
+
+-I also changed the flow of the descriptions to assume that the flow is:  enter info, save, then back button.  I do make a note that the save button is a choice, and that the back button works the same whether save has been clicked or not.
+
+-altered set business hours, generate schedule, and display schedule flow slightly.  The system has to have a response(as a separate step) to the save button and the back button.  
+	-saw Darcie had mentioned that previously entered data is loaded into the form in the alter availability use case, added that to generate schedule and copied that pattern everywhere else.
+
+-tried a different approach to the beginning of the alter availability use case.  I think this way looks at it slightly differently, not treating the alter availability button on the main screen as the start of the use case for the schedule manager.
+
+-generalized the alter availability screen description to be more similar to the set business hours use case.  less specific in how the form must be implemented but all of the details are still there.
+
+-Overall copy/pasted wording from each use case descriptions to the others to keep consistency.  For instance, the save and back button portions.
+
+-given employee wording on alter availability, does this make sense?  (Tied into the end of select employee use case)
+
+-should there be a back button on the select employee screen?  Doesn't have one now, doesn't really NEED one.
+
+
+

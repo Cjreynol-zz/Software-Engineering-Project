@@ -1,0 +1,25 @@
+CDJ Scheduler is a system for scheduling employees in a business setting.  It enables a schedule manager (a superuser, not part of the scheduling system) to resolve a schedule based on the availability that employees (the other type of user) enter.
+
+The CDJ Scheduler relies on defaults initially for the business hours and availability of each employee, then once this information is entered and saved (provided it fits within system limits) the previous version of the information is loaded for editing by users.
+
+Logging in is done from the first screen in the application, required before the user can access any other functionality.  The user must enter a username and password, and attempt to submit.  If this submission matches information in the DB, then the login window closes, and the main menu of the system displays, displayed information varies depending on the user role.
+
+Logging out is done from the main menu screen, and is only available from that screen.  The user presses the logout button, the main menu is closed, and the login window is displayed.
+
+Setting business hours allows the schedule manager to choose which days of the week the business will be open, along with the open and close times for each particular day.  Then the manager can attempt to save/store the entered information.  If it meets system requirements, then the information is saved and the user is informed of this.  If not, an error message is displayed based on the particular requirement that is not met.  The manager also has the option to return to the main menu screen via a button.
+
+Altering availability takes two forms, one for each user role.  Employee availability altering consists of the employee choosing which days of the week they are available, along with the beginning and ending times for each day.  This intentionally mirrors the setting business hours functionality.  The employee can then attempt to save/store the information.  If it meets system requirements, then the information is saved and the user is informed of this.  If not, an error message is displayed based on the particular requirement that is not met.  The employee also has the option to return to the main menu screen via a button.
+
+	The second form is used by the schedule manager.  Since they are not part of the employees to be scheduled, they first encounter an additional screen before the enter availability screen.  They are given a drop-down menu to select a given employee, then they submit this choice and are given the employee alter availability screen in the context that they are that employee, and the functionality follows the typical flow from this point.
+
+Generating the schedule displays a single button, that prompts the system to attempt to create a work schedule from the given availability of all of the employees.  The manager hits this button, and if a schedule is possible, it saves it and displays it, showing the days of the week and a list of the employees that are working and when they are working.  It also displays the number of hours each employee is working with this given schedule.  If a schedule is not possible then it displays an error message that tells where the holes in the working schedule are, along with the number of hours each employee is working.  The manager is then intended to take this information, return to the main menu screen, and enter the alter availability screen as employees (decided manually by manager) to resolve these errors.  Then they can return and generate a schedule to be stored.
+
+
+
+Additional functionality
+
+The schedule manager can Add/Remove users.  They are displayed a screen that provides an option to create a new user, which take them to another screen where they are prompted to enter required information (username/password/name).  If the information is entered correctly, they can save it, are informed of the success, and then return to the main screen.  If not an error message is displayed with the particular problem found by the system.
+
+	The manager is also given an option on the Add/Remove user screen to choose an employee from a drop down box, and then hit a remove button to delete the employee's records from the system.  They are no longer able to login, or be scheduled.
+
+Both types of users can display the current version of the schedule (showing the days of the week and a list of the employees that are working and when they are working), with an error message displaying if an initial schedule has not yet been created.
