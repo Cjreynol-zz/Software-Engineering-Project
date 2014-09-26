@@ -3,7 +3,7 @@ CSCI 4711 - Software Engineering
   
 Team Members:  
 -Darcie Odom  
--Chad Reynolds
+-Chad Reynolds  
 -Jeremy Scott  
   
 Project Name:  CDJ Scheduler  
