@@ -1,0 +1,151 @@
+Class List
+==========
+
+Entities
+---------
+User				cjr
+
+
+DB-Related
+-----------
+DBConnector - boundary		cjr
+DB				cjr
+
+
+Boundary
+----------
+LoginForm			cjr
+MainMenuForm			cjr
+SelectEmployeeForm		jjs
+AlterAvailabilityForm		jjs
+GenerateScheduleForm		jjs
+DisplayScheduleForm		jjs
+
+
+Controller
+-----------
+LoginController			jjs
+MainController			dlo
+SelectEmployeeController	dlo
+AlterAvailabilityController	dlo
+GenerateScheduleController	dlo
+DisplayScheduleController	dlo
+
+
+
+
+Detailed Classes
+=================
+
+User	** Does this mean we need to change all of our sequence diagrams or can we leave them the same to distinguish?
++username:string
++password:string
++isScheduleManager:boolean
+
+
+DBConnector - boundary
++getUser(string):result
++getEmployees():result
++getAvailability(User):result
++getAvailability():result     ** needs a name change to distinguish it as the get all availabilities for genSchedule
++save(string, Availability):void		** added username to save availability
++storeSchedule(Schedule):result	** should remove the result returned on the sequence diagram
++getSchedule():result
+
+DB - internal to system but not defined by us
+
+
+LoginForm
+-username:string
+-password:string
++submit():void
++displayMessage(string):void
+
+MainMenuForm
++startLogOut():void
++startSelectEmployee():void
++startAlterAvailability():void
++startGenerateSchedule():void
++startDisplaySchedule():void
+
+SelectEmployeeForm
+-employees:List<string>
++populateData(result):void  **name changed from populate
++submit():void
+
+AlterAvailabilityForm
+-availability:Availability
++populateData(Availability):void
++save():void
++displayMessage(string):void
++back():void
+
+GenerateScheduleForm
+-priority:string
++generate():void
++displayMessage(string):void
++back():void
+
+DisplayScheduleForm
++displaySchedule(Schedule):void
++back():void
++displayMessage(string):void
+
+
+MainController
+-user:User
++startLogOut():void
++startSelectEmployee(string):void   **
++startAlterAvailability(string):void	**
++startGenerateSchedule():void
++startDisplaySchedule():void
++displayMainMenu():void
+
+LoginController
++submit(string, string):void
+-verifyUser(result):boolean
++startLogin()
+
+SelectEmployeeController
++submit(User):void
+
+AlterAvailabilityController
+-user:string
++save(string, availability):void	** add username to save
+-validate(availability):boolean
++back():void
+
+GenerateScheduleController
++generate(string):void 
+-generateSchedule(string, result):Schedule ** add priority to this method call
++back():void ** has a dashed line in generateSchedule success & back
+
+DisplayScheduleController
++back():void ** has a dashed line in success & failure
+
+
+
+--strings to pass username around, except mainController needs to know if the user is a SM or not
+Notes:
+---------
+-Can we just get rid of MainController and have all of the other controllers sitting and waiting on their respective use-cases to be activated?  
+	+This does require some reworking everywhere, but mostly I believe it is just moving MainController actions to the other controllers
+
+-I like the idea of:
+	+generalizing alterAvailability
+	+removing save(and maybe load) and back to their own use cases that are included as needed
+	-however, the second probably does not provide us much benefit like we decided last time, not sure the first does either
+	-looking at it in a "business" sense (cost vs benefit) makes me think it is a bigger time-suck than time-saver when we are in the code in a few weeks
+
+-We need to adjust SE, GS, and DS to show something in the query to the DB
+
+-The visio file for the generateSchedule mock-up needs to be changed to not include a save button
+
+-Couple minor errors in the names of the sequence diagrams, and many of the names could do with being shortened
+
+-errors noted on the detailed diagrams, needs double-checking
+
+	
+
+
+
