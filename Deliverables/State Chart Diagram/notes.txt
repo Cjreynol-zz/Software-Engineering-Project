@@ -1,0 +1,6 @@
+-I dislike that we are constantly creating/destroying the controllers.
+Perhaps we could just have them all be created by the main controller once the user gets past login.
+-We may want to address/update some of our diagrams from the point of view of implementation.  A couple things in the login controller were a little wonky once I actually started looking at how it would be coded, and I imagine there are more little things that are going to require updates to earlier work.
+-Lets swap select employee to call alterAvailability through the main controller.  I like how we make that controller our mid point for contact between use cases, and if we make this change then it universally is our controller of controllers.
+
+*There are a few grammar issues within the document I fixed for the printout but are not fixed in the electronic copy
