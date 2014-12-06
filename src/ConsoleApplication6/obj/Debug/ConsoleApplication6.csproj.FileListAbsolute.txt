@@ -1,0 +1,34 @@
+U:\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\ConsoleApplication6.exe.config
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\EntityFramework.dll
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\EntityFramework.SqlServer.dll
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\System.Data.SQLite.dll
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\System.Data.SQLite.EF6.dll
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\System.Data.SQLite.Linq.dll
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\EntityFramework.xml
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\EntityFramework.SqlServer.xml
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\System.Data.SQLite.xml
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\CDJ Scheduler.exe.config
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\CDJ Scheduler.exe
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\bin\Debug\CDJ Scheduler.pdb
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\obj\Debug\CDJ Scheduler.exe
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\obj\Debug\CDJ Scheduler.pdb
+\\jaguar\students\creyno17\Visual Studio 2012\Projects\ConsoleApplication6\ConsoleApplication6\obj\Debug\ConsoleApplication6.csprojResolveAssemblyReference.cache
+U:\ConsoleApplication6Demo\ConsoleApplication6\bin\Debug\CDJ Scheduler.exe.config
+U:\ConsoleApplication6Demo\ConsoleApplication6\obj\Debug\CDJ Scheduler.exe
+U:\ConsoleApplication6Demo\ConsoleApplication6\obj\Debug\CDJ Scheduler.pdb
+U:\ConsoleApplication6Demo\ConsoleApplication6\bin\Debug\CDJ Scheduler.exe
+U:\ConsoleApplication6Demo\ConsoleApplication6\bin\Debug\CDJ Scheduler.pdb
+U:\ConsoleApplication6Demo\ConsoleApplication6\bin\Debug\EntityFramework.xml
+U:\ConsoleApplication6Demo\ConsoleApplication6\bin\Debug\EntityFramework.SqlServer.xml
+U:\ConsoleApplication6Demo\ConsoleApplication6\bin\Debug\System.Data.SQLite.xml
+U:\ConsoleApplication6Demo\ConsoleApplication6\obj\Debug\ConsoleApplication6.csprojResolveAssemblyReference.cache
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Debug\CDJ Scheduler.exe.config
+U:\CDJ Scheduler Demo\ConsoleApplication6\obj\Debug\CDJ Scheduler.exe
+U:\CDJ Scheduler Demo\ConsoleApplication6\obj\Debug\CDJ Scheduler.pdb
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Debug\CDJ Scheduler.exe
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Debug\CDJ Scheduler.pdb
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Debug\EntityFramework.xml
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Debug\EntityFramework.SqlServer.xml
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Debug\System.Data.SQLite.xml
+U:\CDJ Scheduler Demo\ConsoleApplication6\obj\Debug\ConsoleApplication6.csprojResolveAssemblyReference.cache
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Debug\CDJ Scheduler.XML

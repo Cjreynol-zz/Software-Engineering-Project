@@ -1,0 +1,6 @@
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Release\CDJ Scheduler.exe.config
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Release\CDJ Scheduler.exe
+U:\CDJ Scheduler Demo\ConsoleApplication6\bin\Release\CDJ Scheduler.pdb
+U:\CDJ Scheduler Demo\ConsoleApplication6\obj\Release\ConsoleApplication6.csprojResolveAssemblyReference.cache
+U:\CDJ Scheduler Demo\ConsoleApplication6\obj\Release\CDJ Scheduler.exe
+U:\CDJ Scheduler Demo\ConsoleApplication6\obj\Release\CDJ Scheduler.pdb

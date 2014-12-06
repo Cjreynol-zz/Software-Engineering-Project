@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CDJ Scheduler</name>
+    </assembly>
+    <members>
+        <member name="T:CDJScheduler.DBConnector">
+            <summary>
+            Class to format data moving between the Controllers and the data store.
+            </summary>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.#ctor">
+            <summary>
+            Creates the connection to the data store.
+            </summary>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.RunCommand(System.String)">
+            <summary>
+            Debug function, only for testing.
+            <para/>Executes a non-SELECT statement in the data store.
+            </summary>
+            <param name="command">The command to be run.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.DBClear">
+            <summary>
+            Debug function, only for testing.
+            <para/>Deletes the availability and schedule from the data store.
+            </summary>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.GetUser(System.String)">
+            <summary>
+            Returns a User object if one is associated with that username in the data store.
+            <para/> Otherwise returns null.
+            </summary>
+            <param name="uname">Username of the user to be retrieved from the data store.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.GetEmployees">
+            <summary>
+            Returns a list of all the employee usernames in the data store.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.GetAvailability(CDJScheduler.User)">
+            <summary>
+            Returns availability for the given user from the data store.
+            <para/> Availability is in the form of {username,mon,tue,...,sun}.
+            </summary>
+            <param name="user">User whose availability is requested.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.GetAllAvailability">
+            <summary>
+            Returns all of the availability from the data store.
+            <para/> All in the form of a List of availabilities ({username,mon,tue,...,sun})
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.StoreAvailability(System.String[])">
+            <summary>
+            Stores the given availability in the data store.
+            <para/>First deletes the previous availability from the data store.
+            </summary>
+            <param name="availability">The availability to be stored.</param>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.GetSchedule">
+            <summary>
+            Returns the schedule from the data store.
+            <para/>Schedule is in the form of an array, with an index for each day of the week.
+            <para/>Each index stores a list of the usernames of employees working that day.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CDJScheduler.DBConnector.StoreSchedule(System.Collections.Generic.List{System.String}[])">
+            <summary>
+            Stores the given schedule in the data store.
+            <para/>First deletes the previous schedule from the data store.
+            </summary>
+            <param name="schedule">The schedule to be stored.</param>
+        </member>
+    </members>
+</doc>

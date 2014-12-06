@@ -1,6 +1,6 @@
 set-business-hours has gone the way of add/edit users !
 
-the updated list (looking pretty sparse nowadays):
+the updated list:
 -login
 -logout
 -displaySchedule
@@ -13,7 +13,8 @@ data store for CDJ Scheduler:
 
 [hard-coded (not part of the normal functionality)]
 -business hours (days of the week, start/stop times, number of employees)
--users (username, password, full name, is Schedule Manager)
+	-could just be hard-coded into the system, the alterAvailabilityForm/Controller
+-users (username, password, is Schedule Manager)
 
 [standard]
 -employee availability (days of the week, start/stop times)
